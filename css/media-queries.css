@@ -56,6 +56,16 @@ img{
     font-size: 1em;
 }
 
+div #social-media-links{
+
+}
+
+footer{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
 @media (min-width: 961px){
     .alert-info{
         display: none;
@@ -94,5 +104,6 @@ img{
         margin-left: 2em;
         width: calc(40% - 2em)
     }
+
 
 }
