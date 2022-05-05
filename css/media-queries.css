@@ -3,6 +3,7 @@
     font-family: sans-serif;
 }
 
+
 .alert-info{
     text-align: center;
     background: #CBFEFF;
@@ -18,9 +19,7 @@
 h1{
     text-align: center;
 }
-nav{
-    width: 100%;
-}
+
 
 
 .nav-links{
@@ -34,12 +33,10 @@ nav{
 }
 .nav-links li{
     background: #CDCDCC;
-    margin: 0 auto;
     width: 100%;
     text-align: center;
     padding: 1em;
     margin-bottom: .50em;
-
 }
 
 img{
@@ -59,3 +56,43 @@ img{
     font-size: 1em;
 }
 
+@media (min-width: 961px){
+    .alert-info{
+        display: none;
+    }
+    h1{
+        text-align: unset;
+        display: inline-block;
+        margin-right: auto;
+    }
+    nav{
+        display: inline-block;
+        position: absolute;
+        right: 0;
+        top: 2.5em;
+
+    }
+    .nav-links{
+        display: inline-flex;
+        flex-direction: row;
+    }
+    .nav-links li{
+        background: none;
+        margin: 0;
+    }
+    .nav-links, h1{
+        padding: 1em;
+    }
+
+    #main, .sub-section{
+        float: left;
+    }
+    #main{
+        width: 60%;
+    }
+    .sub-section{
+        margin-left: 2em;
+        width: calc(40% - 2em)
+    }
+
+}
